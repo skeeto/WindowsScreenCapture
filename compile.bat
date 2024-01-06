@@ -1,1 +1,2 @@
-gcc -shared -o WindowsScreenCapture.dll WindowsScreenCapture.c -luser32 -lgdi32
+cc -shared -nostartfiles -O -mwindows --entry 0 -o WindowsScreenCapture.dll ^
+   WindowsScreenCapture.c
